@@ -7,6 +7,7 @@ will write, build, and deploy a website with syntax highlighting using React.
 See what we will be building on [Github
 pages](https://captainalan.github.io/react-syntax-highlighter-tutorial/). 
 
+![Screenshot](preview.png)
 
 ### Pre-requisites
 
@@ -146,11 +147,11 @@ will have been generated.
 Edit `package.json` adding a "homepage" line pointing to the Github pages
 website you will be hosting your completed project on:
 
-```json
+```
 {
-  ...,
+  ...
   "homepage": "https://YOUR-GITHUB-NAME.github.io/YOUR-REPO-NAME",
-  ...,
+  ...
 }
 ```
 
