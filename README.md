@@ -1,18 +1,21 @@
 ## Create a tutorial with syntax highlighting using React
 
-In this tutorial, we will write, build, and deploy a tutorial complete with
-syntax highlighting using React. 
-
 Any self-taught web developer will spend a lot of time reading and working
-through tutorials. Here's my (first) effort to give back!
+through tutorials. Here's my (first) effort to give back!  In this tutorial, we
+will write, build, and deploy a website with syntax highlighting using React.
+
+See what we will be building on [Github
+pages](https://captainalan.github.io/react-syntax-highlighter-tutorial/). 
+
 
 ### Pre-requisites
 
 I will assume you have basic working knowledge of how to open a terminal,
-navigate directories, create files, etc. Additionally, you should be familiar
-with concepts common to most programming languages like variables,
+navigate directories, create files, etc. You should have a Github account and be
+familiar with the basics of Git. Additionally, you should be familiar with
+concepts common to most programming languages like variables,
 
-Additionally, you will need to have the following things installed:
+You will also need to have the following things installed:
 
 - [npm](https://www.npmjs.com/)
 - [create-react-app](https://github.com/facebook/create-react-app)
@@ -143,7 +146,7 @@ will have been generated.
 Edit `package.json` adding a "homepage" line pointing to the Github pages
 website you will be hosting your completed project on:
 
-```
+```json
 {
   ...,
   "homepage": "https://YOUR-GITHUB-NAME.github.io/YOUR-REPO-NAME",
@@ -159,7 +162,7 @@ npm install --save-dev gh-pages
 
 In `package.json`, modify the scripts item, adding the following lines:
 
-```
+```json
 "scripts": {
   ...
   "predeploy": "npm run build",
