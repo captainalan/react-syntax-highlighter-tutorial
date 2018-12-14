@@ -125,7 +125,14 @@ of `App.js` to your liking.
 
 ## Building and Deploying
 
-So, we built a nice looking, static web page. Let's upload it somewhere!
+So, we built a nice looking, static web page. Let's upload it somewhere! Here,
+we'll be using Github and Github pages.
+
+First, creat a new empty Github repository. 
+
+For more information on this subject, see [this helpful
+page](https://medium.com/@_mariacheline/deploy-create-react-app-project-to-github-pages-2eb6deda5b89)
+by [mariacheline](https://medium.com/@_mariacheline).
 
 ## Summary
 
