@@ -64,8 +64,68 @@ represent the version of this package that was just installed.
 
 ## Put things together
 
+At the top of `App.js`, below the import statements that are already there, add
+the following lines:
 
+```javascript
+import SyntaxHighlighter from 'react-syntax-highlighter';
+```
 
+Next, get a snippet of code you want to try to display from your favorite
+programming language (many are
+[supported](https://github.com/conorhastings/react-syntax-highlighter/blob/HEAD/AVAILABLE_LANGUAGES_HLJS.MD)
+by react-syntax-highlighter). Here, I'll use [Haskell](https://www.haskell.org/).
+
+Right after all the import statements, save a string of text to a variable to
+display. 
+
+```javascript
+// Example code string to highlight
+const myCodeString = `
+{- Map function written in Haskell. -}
+map           :: (a->b) -> [a] -> [b]
+map f  []     =  []
+map f (x:xs)  =  f x : map f xs
+`
+```
+
+Then, add the following lines to the `App` class definition right before the
+closing header tag (`</header>`).
+
+```html
+<SyntaxHighlighter language='haskell'>
+    {myCodeString}
+</SyntaxHighlighter>
+```
+
+Check out what your app looks like so far in your browser (which should have a
+window open to http://localhost:3000/). Everything should look cool except the
+text is strangely centered in the code block.
+
+Open up `App.css` and change
+
+```css
+.App {
+  text-align: center;
+}
+
+```
+
+...to...
+
+```css
+.App {
+  text-align: left;
+}
+
+```
+
+Return to the browser window; things should look good. Further edit the contents
+of `App.js` to your liking.
+
+## Building and Deploying
+
+So, we built a nice looking, static web page. Let's upload it somewhere!
 
 ## Summary
 
