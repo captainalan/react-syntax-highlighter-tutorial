@@ -1,44 +1,57 @@
+## Create a tutorial with syntax highlighting using React
+
+In this tutorial, we will write, build, and deploy a tutorial complete with
+syntax highlighting using React. 
+
+Any self-taught web developer will spend a lot of time reading and working
+through tutorials. Here's my (first) effort to give back!
+
+### Pre-requisites
+
+I will assume you have basic working knowledge of how to open a terminal,
+navigate directories, create files, etc. Additionally, you should be familiar
+with concepts common to most programming languages like variables,
+
+Additionally, you will need to have the following things installed:
+
+- [npm](https://www.npmjs.com/)
+- [create-react-app](https://github.com/facebook/create-react-app)
+
+Please make sure you have these packages installed. If you are using MacOS and
+you do not already have [homebrew](https://brew.sh/) installed, this may be a
+good opportunity to make the switch to using a [package
+manager](https://en.wikipedia.org/wiki/Package_manager) rather than manually
+dealing with the installations, upgrades, and so forth all the programs you use.
+
+## Getting started
+
+To begin, create a new project using `create-react-app`.
+
+```bash
+$ create-react-app MyProject
+```
+
+From your project's new directory, start up a development server so you can see
+the changes you make in your browser as you write code.
+
+```bash
+$ cd MyProject 
+$ yarn start
+```
+
+Your default browser should launch a window at http://localhost:3000/ by
+`create-react-app`'s default settings.
+
+Now, open up your favorite text editor (here I am using [Visual Studio
+Code](https://code.visualstudio.com/) with
+vim emulation) and navigate to your project directory.
+
+## Install some packages
+
+Open up another terminal to your project's root directory (e.g. `~/MyProject/`).
+(Don't shut down the development server you just started!)
+
+
+<hr>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
