@@ -128,7 +128,55 @@ of `App.js` to your liking.
 So, we built a nice looking, static web page. Let's upload it somewhere! Here,
 we'll be using Github and Github pages.
 
-First, creat a new empty Github repository. 
+First, create a new empty Github repository. Upload your project to that new
+repository. 
+
+Now, return to the terminal window at your project directory. Run:
+
+```bash
+npm run build
+```
+
+After a few moments (depends on how fast your machine is), a new `build/` folder
+will have been generated.
+
+Edit `package.json` adding a "homepage" line pointing to the Github pages
+website you will be hosting your completed project on:
+
+```
+{
+  ...,
+  "homepage": "https://YOUR-GITHUB-NAME.github.io/YOUR-REPO-NAME",
+  ...,
+}
+```
+
+Install the `gh-pages` package on npm:
+
+```bash
+npm install --save-dev gh-pages
+```
+
+In `package.json`, modify the scripts item, adding the following lines:
+
+```
+"scripts": {
+  ...
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+  ...
+}
+```
+
+Once that is done, deploy your page by running...
+
+```bash
+npm run deploy
+```
+
+...from a terminal in the root directory. This command will deploy your `build/`
+directory created earlier to the homepage you specified.
+
 
 For more information on this subject, see [this helpful
 page](https://medium.com/@_mariacheline/deploy-create-react-app-project-to-github-pages-2eb6deda5b89)
@@ -142,6 +190,10 @@ pieces together and then returned them back to the internet from which forth
 they came.
 
 Using modern tooling like npm and React, many difficult tasks become easy! 
+
+Here, there wasn't much explaining. Hopefully, however, by successfully using a
+handful of tools, this tutorial has helped you figure out what you want to learn
+more about next in addition to delivering some fast, flashy results.
 
 <hr>
 
