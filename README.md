@@ -44,13 +44,37 @@ Your default browser should launch a window at http://localhost:3000/ by
 
 Now, open up your favorite text editor (here I am using [Visual Studio
 Code](https://code.visualstudio.com/) with
-vim emulation) and navigate to your project directory.
+vim emulation) and navigate to your project directory. Open up the file
+`src/App.js` to edit.
 
-## Install some packages
+## Install packages
 
 Open up another terminal to your project's root directory (e.g. `~/MyProject/`).
-(Don't shut down the development server you just started!)
+We are going to make use of the
+[react-syntax-highlighter](https://github.com/conorhastings/react-syntax-highlighter/blob/HEAD/AVAILABLE_LANGUAGES_HLJS.MD)
+package. Install this package by running `npm install react-syntax-highlighter
+--save`.
 
+When you do this, you may see a lot of text, some warnings, and finally
+(hopefully) a reassuring message that your install was successful. 
+
+Take a look at `package.json`. You will notice that there is a line under
+"dependencies" that says `"react-syntax-highlighter": "^XX.X.X"` where the X's
+represent the version of this package that was just installed.
+
+## Put things together
+
+
+
+
+## Summary
+
+In this tutorial, we built a React app by re-using a lot of existing, readily
+available work: create-react-app, react-syntax-highlighter, etc. We pasted some
+pieces together and then returned them back to the internet from which forth
+they came.
+
+Using modern tooling like npm and React, many difficult tasks become easy! 
 
 <hr>
 
