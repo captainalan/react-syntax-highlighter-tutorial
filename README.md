@@ -15,8 +15,8 @@ I will assume you have basic working knowledge of how to open a terminal,
 navigate directories, create and edit files, etc. You should have a Github
 account and be familiar with the basics of Git. Additionally, you should be
 familiar with concepts common to most programming languages like variables,
-comments, etc. While some experience working with JavaScript node, and React
-will be helpful it is not necessary for this tutorial.
+comments, etc. While some experience working with JavaScript, node, and React
+will be helpful, it is not necessary for this tutorial.
 
 You will also need to have the following things installed:
 
